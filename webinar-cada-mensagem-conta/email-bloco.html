@@ -1,0 +1,176 @@
+<!-- =========================================================================
+     BLOCO HTML — Webinar "Cada mensagem agora conta" (17/09, 09h)
+     Colar no bloco HTML do editor da Revi. NÃO tem <html>, <head>, <style>
+     nem classes: o bloco entra dentro do <body> que o editor já criou, e o
+     que estivesse fora do corpo (ou dependesse de uma folha de estilo) seria
+     descartado na hora de salvar. Por isso todo estilo aqui é inline.
+     Largura: fluida até 600px. Sem media query — os dois cartões empilham
+     sozinhos quando a tela é estreita (inline-block + max-width), porque
+     media query em bloco HTML depende de um <style> que não sobrevive.
+     Imagens: URLs públicas (repo allanriffert/files). Trocar só aqui.
+     Variável de personalização: {{nome}}.
+     ========================================================================= -->
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;background:#FFFFFF">
+<tr><td align="center" style="padding:0">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" style="width:100%;max-width:600px;border-collapse:collapse">
+
+  <!-- Cabeçalho: o nome do programa em texto, para sobreviver ao bloqueio
+       de imagens que Gmail e Outlook aplicam por padrão a remetente novo. -->
+  <tr><td style="padding:0 12px 14px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#5B6779">
+    <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#0940C6;margin-right:7px"></span>Revi Academy
+  </td></tr>
+
+  <!-- Faixa de topo: data, balão e logo. Não repete a manchete nem o botão,
+       que vêm logo abaixo em texto — dentro de uma imagem reduzida a 600px
+       aquele texto ficaria em 11px e o botão não seria clicável de verdade. -->
+  <tr><td style="padding:0 0 24px;font-size:0">
+    <a href="https://luma.com/wk2cs183" target="_blank" style="text-decoration:none">
+      <img src="https://raw.githubusercontent.com/allanriffert/files/master/webinar-cada-mensagem-conta/email-hero-1200x260.png" width="600" alt="Revi · Webinar 17 de setembro, 09h, ao vivo" style="display:block;width:100%;max-width:600px;height:auto;border:0;outline:none;text-decoration:none;border-radius:8px">
+    </a>
+  </td></tr>
+
+  <!-- Manchete. 38px: sem media query o corpo é o mesmo no celular, e 46px
+       quebrava "cobrança" ao meio numa tela de 320px. -->
+  <tr><td style="padding:0 12px 12px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:38px;line-height:1.06;font-weight:400;letter-spacing:-1.4px;color:#0B1220">
+    Novas regras de cobrança<br><span style="color:#0940C6">do WhatsApp.</span>
+  </td></tr>
+
+  <tr><td style="padding:0 12px 22px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:17px;line-height:1.6;color:#5B6779">
+    A partir de 1º de outubro a Meta cobra cada mensagem de serviço, inclusive as do atendimento. Confira as novas regras no Webinar e descubra quais alternativas você tem.
+  </td></tr>
+
+  <tr><td style="padding:0 12px 24px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#0B1220">
+    <p style="margin:0 0 14px">Oi, {{nome}}.</p>
+    <p style="margin:0 0 14px">A partir de <strong>1º de outubro</strong>, a Meta passa a cobrar uma taxa por mensagem de serviço na WhatsApp Business Platform. A dúvida que mais chegou até nós: <em>"isso pega só a automação?"</em> Não. Vale para qualquer mensagem livre enviada pela empresa dentro da janela de 24 horas — <strong>inclusive o chat humano do atendimento</strong>.</p>
+    <p style="margin:0">Por isso vamos fazer um encontro ao vivo. Sem demo, sem pitch: só o que muda, quanto custa no seu volume e o que ajustar antes da primeira fatura afetada.</p>
+  </td></tr>
+
+  <!-- Antes / depois num cartão só. Eram dois cartões lado a lado e as duas
+       bordas encostavam no meio, virando uma linha dupla. Agora a moldura é
+       uma só e o que separa as metades é o vão interno; quando a tela é
+       estreita elas empilham dentro da mesma moldura (font-size:0 no pai
+       mata o espaço em branco entre os dois inline-block). O recuo de cada
+       metade mora na tabela de dentro, não no div: padding no div somaria à
+       largura e estouraria a linha.
+       As duas metades somam 512px e não 600: o bloco perde para a borda, para
+       os recuos do editor e para o próprio cartão uns 70px antes de chegar
+       aqui, e com 274px cada uma elas empilhavam já no desktop. -->
+  <tr><td style="padding:0 12px 26px">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:separate;background:#FFFFFF;border:1px solid #E3E9F2;border-radius:20px">
+      <tr><td style="padding:16px 6px 0;font-size:0;text-align:center">
+        <!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="50%" valign="top"><![endif]-->
+        <div style="display:inline-block;width:100%;max-width:256px;vertical-align:top;text-align:left">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding:0 5px 16px">
+
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin:0 0 12px"><tr><td style="font-family:'DM Sans',Helvetica,Arial,sans-serif;border:1px solid #E3E9F2;color:#5B6779;border-radius:999px;padding:6px 13px;font-size:10.5px;font-weight:700;letter-spacing:1.4px">ATÉ 30 SET</td></tr></table>
+
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:separate;background:#EFEAE2;border-radius:14px"><tr><td style="padding:14px 10px 12px">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" style="padding:0 0 10px">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="font-family:'DM Sans',Helvetica,Arial,sans-serif;background:#FFFFFF;border-radius:8px;padding:3px 10px;font-size:9.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:#54656F">Hoje</td></tr></table>
+            </td></tr></table>
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0 0 6px"><tr><td align="right"><table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0"><tr><td style="background:#D9FDD3;border-radius:8px 8px 0 8px;padding:6px 9px 7px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:13.5px;line-height:1.35;color:#111B21">Oi, tudo bem? <span style="font-size:10.5px;color:#667781">09:41</span></td></tr></table></td></tr></table>
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0 0 6px"><tr><td align="right"><table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0"><tr><td style="background:#D9FDD3;border-radius:8px;padding:6px 9px 7px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:13.5px;line-height:1.35;color:#111B21">Como vai? <span style="font-size:10.5px;color:#667781">09:41</span></td></tr></table></td></tr></table>
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="right"><table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0"><tr><td style="background:#D9FDD3;border-radius:8px;padding:6px 9px 7px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:13.5px;line-height:1.35;color:#111B21">Seu pedido saiu para entrega 📦 <span style="font-size:10.5px;color:#667781">09:42</span></td></tr></table></td></tr></table>
+            </td></tr></table>
+
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:12px 0 0"><tr><td><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:separate;background:#F8FAFD;border-radius:10px"><tr><td style="padding:11px 10px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:11px;line-height:1.35;color:#5B6779">Custo da conversa<br><span style="color:#2A3447;font-weight:500">3 mensagens de serviço</span></td><td align="right" style="padding:11px 10px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:17px;font-weight:700;color:#2A3447;white-space:nowrap">R$ 0</td></tr></table></td></tr></table>
+
+      </td></tr></table>
+    </div>
+        <!--[if mso]></td><td width="50%" valign="top"><![endif]-->
+        <div style="display:inline-block;width:100%;max-width:256px;vertical-align:top;text-align:left">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding:0 5px 16px">
+
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin:0 0 12px"><tr><td style="font-family:'DM Sans',Helvetica,Arial,sans-serif;background:#0B1220;color:#FFFFFF;border-radius:999px;padding:6px 13px;font-size:10.5px;font-weight:700;letter-spacing:1.4px">A PARTIR DE 1 OUT</td></tr></table>
+
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:separate;background:#EFEAE2;border-radius:14px"><tr><td style="padding:14px 10px 12px">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" style="padding:0 0 10px">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="font-family:'DM Sans',Helvetica,Arial,sans-serif;background:#FFFFFF;border-radius:8px;padding:3px 10px;font-size:9.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:#54656F">01 de outubro</td></tr></table>
+            </td></tr></table>
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0 0 6px"><tr><td align="right"><table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle" style="padding:0 5px 0 0"><table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;background:#FFFFFF;border:1px solid #E3E9F2;border-radius:14px"><tr><td style="font-family:'DM Sans',Helvetica,Arial,sans-serif;padding:5px 8px;font-size:10.5px;font-weight:700;color:#0940C6;white-space:nowrap">R$ 0,035</td></tr></table></td><td style="background:#D9FDD3;border-radius:8px 8px 0 8px;padding:6px 9px 7px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:13.5px;line-height:1.35;color:#111B21">Oi, tudo bem? <span style="font-size:10.5px;color:#667781">09:41</span></td></tr></table></td></tr></table>
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0 0 6px"><tr><td align="right"><table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle" style="padding:0 5px 0 0"><table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;background:#FFFFFF;border:1px solid #E3E9F2;border-radius:14px"><tr><td style="font-family:'DM Sans',Helvetica,Arial,sans-serif;padding:5px 8px;font-size:10.5px;font-weight:700;color:#0940C6;white-space:nowrap">R$ 0,035</td></tr></table></td><td style="background:#D9FDD3;border-radius:8px;padding:6px 9px 7px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:13.5px;line-height:1.35;color:#111B21">Como vai? <span style="font-size:10.5px;color:#667781">09:41</span></td></tr></table></td></tr></table>
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="right"><table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle" style="padding:0 5px 0 0"><table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;background:#FFFFFF;border:1px solid #E3E9F2;border-radius:14px"><tr><td style="font-family:'DM Sans',Helvetica,Arial,sans-serif;padding:5px 8px;font-size:10.5px;font-weight:700;color:#0940C6;white-space:nowrap">R$ 0,035</td></tr></table></td><td style="background:#D9FDD3;border-radius:8px;padding:6px 9px 7px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:13.5px;line-height:1.35;color:#111B21">Seu pedido saiu para entrega 📦 <span style="font-size:10.5px;color:#667781">09:42</span></td></tr></table></td></tr></table>
+            </td></tr></table>
+
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:12px 0 0"><tr><td><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:separate;background:#E1EDFE;border-radius:10px"><tr><td style="padding:11px 10px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:11px;line-height:1.35;color:#0940C6">Custo da conversa<br><span style="color:#0940C6;font-weight:500">3 mensagens de serviço</span></td><td align="right" style="padding:11px 10px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:17px;font-weight:700;color:#0940C6;white-space:nowrap">R$ 0,105</td></tr></table></td></tr></table>
+
+      </td></tr></table>
+    </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td></tr>
+    </table>
+  </td></tr>
+
+  <!-- Bloco do evento -->
+  <tr><td style="padding:0 12px 26px">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:separate;background:#0B1220;border-radius:12px">
+      <tr><td style="padding:26px 26px 6px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#FFFFFF">
+        17 set <span style="color:#7C7C88">&nbsp;|&nbsp;</span> 09h <span style="color:#7C7C88">&nbsp;|&nbsp;</span> <span style="color:#5A8DFF">&bull; Ao vivo</span>
+      </td></tr>
+      <tr><td style="padding:6px 26px 20px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#B9C4D6">
+        com <strong style="color:#FFFFFF">Allan Riffert</strong>, Head of Growth &middot; Revi<br>
+        Transmissão ao vivo no YouTube &middot; perguntas pelo chat &middot; gravação enviada depois
+      </td></tr>
+      <tr><td style="padding:0 26px 26px">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="background:#0940C6;border-radius:10px">
+          <a href="https://luma.com/wk2cs183" target="_blank" style="display:inline-block;padding:14px 24px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;color:#FFFFFF;text-decoration:none">Garantir minha vaga&nbsp;&nbsp;&#8599;</a>
+        </td></tr></table>
+      </td></tr>
+    </table>
+  </td></tr>
+
+  <!-- Agenda -->
+  <tr><td style="padding:0 12px 12px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#5B6779">
+    O que vamos cobrir em 60 minutos
+  </td></tr>
+  <tr><td style="padding:0 12px 26px">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:15px;line-height:1.6;color:#0B1220">
+      <tr>
+        <td width="40" valign="top" style="padding:12px 0;border-top:1px solid #0B1220;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;color:#0940C6">01</td>
+        <td style="padding:12px 0;border-top:1px solid #0B1220"><strong>Como a Meta cobra</strong> — por mensagem entregue, não por conversa; as categorias; o que é gratuito hoje.</td>
+      </tr>
+      <tr>
+        <td width="40" valign="top" style="padding:12px 0;border-top:1px solid #E3E9F2;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;color:#0940C6">02</td>
+        <td style="padding:12px 0;border-top:1px solid #E3E9F2"><strong>O que muda em 1º de outubro</strong> — são três coisas, não uma: mensagem de serviço cobrada, template de utilidade na janela aberta deixa de ser gratuito, franquia de 1.000/mês por número.</td>
+      </tr>
+      <tr>
+        <td width="40" valign="top" style="padding:12px 0;border-top:1px solid #E3E9F2;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;color:#0940C6">03</td>
+        <td style="padding:12px 0;border-top:1px solid #E3E9F2"><strong>Quanto custa</strong> — a tarifa no Brasil, a franquia e um exemplo prático no volume de uma operação média.</td>
+      </tr>
+      <tr>
+        <td width="40" valign="top" style="padding:12px 0;border-top:1px solid #E3E9F2;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;color:#0940C6">04</td>
+        <td style="padding:12px 0;border-top:1px solid #E3E9F2"><strong>Como você enxerga isso</strong> — a taxa na fatura Revi (linha separada, uso real do mês) e como acompanhar o volume por fluxo.</td>
+      </tr>
+      <tr>
+        <td width="40" valign="top" style="padding:12px 0;border-top:1px solid #E3E9F2;border-bottom:1px solid #0B1220;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;color:#0940C6">05</td>
+        <td style="padding:12px 0;border-top:1px solid #E3E9F2;border-bottom:1px solid #0B1220"><strong>O que fazer até 1º/10</strong> — consolidar respostas, revisar automações e fluxos de maior consumo. E perguntas ao vivo.</td>
+      </tr>
+    </table>
+  </td></tr>
+
+  <!-- Repasse -->
+  <tr><td style="padding:0 12px 26px">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse"><tr>
+      <td width="3" style="background:#0940C6;font-size:0;line-height:0">&nbsp;</td>
+      <td style="padding:4px 0 4px 16px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#5B6779">
+        A taxa é da Meta, vale para todo o mercado e a Revi repassa exatamente como recebe — <strong style="color:#0B1220">sem margem, em linha separada da fatura</strong>. Produto, preço e contrato da Revi seguem iguais.
+      </td>
+    </tr></table>
+  </td></tr>
+
+  <!-- Chamada secundária -->
+  <tr><td align="center" style="padding:0 12px 32px;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:15px;line-height:1.6;color:#5B6779">
+    Já tem uma dúvida específica da sua operação? Coloque no formulário de inscrição — a ordem do Q&amp;A é montada a partir delas.<br>
+    <a href="https://luma.com/wk2cs183" target="_blank" style="color:#0940C6;font-weight:700;text-decoration:underline">Inscrever e deixar minha pergunta &rarr;</a>
+  </td></tr>
+
+  <!-- Rodapé -->
+  <tr><td style="padding:20px 12px 0;border-top:1px solid #E3E9F2;font-family:'DM Sans',Helvetica,Arial,sans-serif;font-size:12px;line-height:1.6;color:#5B6779">
+    Revi &middot; Blic Sistema e Soluções Ltda &middot; Rua Francisco Leitão, 469 &middot; 12º andar &middot; Pinheiros &middot; São Paulo/SP<br>
+    Dúvidas sobre a cobrança: <a href="https://wa.me/5511936212636" style="color:#5B6779">WhatsApp +55 11 93621-2636</a><br>
+    Você recebe este e-mail porque tem conta na plataforma Revi. <a href="{{UNSUBSCRIBE_LINK}}" style="color:#5B6779">Não quero mais receber</a>
+  </td></tr>
+
+</table>
+</td></tr>
+</table>
